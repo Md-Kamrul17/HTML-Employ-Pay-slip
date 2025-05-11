@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pay Slip</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.maateen.me/bangla/font.css" rel="stylesheet">
+
+<style>
+table{font-family: 'Bangla', sans-serif;}
+
+{
+padding: 0;
+margin: 0;
+box sizing: border-box;
+}
+
+table ,th ,tr{
+border: 1px solid black;
+border-collapse: collapse;
+border-color:  ;
+
+
+
+}
+
+.Logo-image{
+    width: 80px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.Logo-image img{
+    width: 100%;
+    height: 100%;
+
+}
+
+p{
+    letter-spacing: 0px;
+    line-height: 5px;
+    font-size: 9px;
+    text-decoration-thickness: 2px;
+    
+}
+
+body {
+  margin-left: 0.25in;
+  margin-top: 0.20in;
+  margin-bottom: 0.25in;
+  margin-right: 0.20in;
+         
+            padding: 0;
+            width: calc(8.27in - 0.25in - 0.20in); /* A4 width minus left and right margins */
+            height: calc(11.69in - 0.20in - 0.5in); /* A4 height minus top and bottom margins */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+.container {
+            display: grid;
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr; /* Two rows of equal height */
+            grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+            gap: 5px;
+            height: 100vh;
+        }
+        .table-top-left {
+            grid-row: 1;
+            grid-column: 1;
+            height: 50%;
+            
+        }
+        .table-top-right {
+            grid-row: 1;
+            grid-column: 2;
+            height: 50%;
+        }
+        .table-bottom-left {
+            grid-row: 2;
+            grid-column: 1;
+            height: 50%;
+        }
+        .table-bottom-right {
+            grid-row: 2;
+            grid-column: 2;
+            height: 50%;
+        }
+        table {
+            width: 100%;
+            height: 50%;
+            border: 1px solid black;
+        }
+
+        .page {
+      width: 8.16in; /* Set width to 4.40 inches */
+      height: 11.17in; /* Set height to 2.60 inches */
+      background-color: white; /* Page background color */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+      border: 1px solid #ccc; /* Optional border for clarity */
+    }     
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+ 
+        <div class="table-top-left">
+        <table style="height: 0%; vertical-align: top-left;">
+            
+                <tr>
+                    <th style="width:14%; padding-left: 10px;" colspan="2">
+                      <div class="Logo-image">
+                        <img src="Logo.jpg" alt="" width="auto" height="auto"></div>
+                  </th>
+                   
+                    <th style="width:35%; font-size: 16px;" colspan="4">MAF Footwear Limited</th>
+            </tr>
+
+            <tr>
+                <td style=" padding-left: 10px; font-size: 11px;" colspan="6">Plot No 296, East Nasira bad I/A,                   Chattogram, Bangladesh.</td>
+               </tr>
+
+            <tr>
+          
+                <th style="width:10%; font-size: 11px;" colspan="2">বেতন রশিদ:</th>
+              
+                <th style="width:25%; font-size: 11px;" colspan="4">From   :	26-OCT-24              To : 25-NOV-24</th>
+                </tr>
+
+     <tr border: 1px solid black;>
+         
+          <td style="height: 45px; width: 10%; vertical-align: top; text-align: left; padding-left: 5px;">
+            <P>কার্ড নং</P>
+            <P>পদবী</P>
+            <P>যোগদানের তারিখ</P>
+            <P>মোট মজুরী</P>
+            <P>কার্য দিবস সংখ্যা</P>
+          </td>
+          
+          <td style="height: 45px; width: 9%; vertical-align: top; text-align: left;">
+            <P>:34532</P>
+            <P>:Sr. Technician</P>
+            <P>:20-SEP-20</P>
+            <P>:17,194</P>
+            <P>:27</P>
+          </td>
+          
+          <td style="width: 9%;">
+            <P>নাম</P>
+            <P>ডিপার্টমেন্ট</P>
+            <P>সেকশন</P>
+            <P>সাব সেকশন</P>
+            <P>টাইপ</P>
+            <p>মজুরীযোগ্য দিন</p>
+          </td>
+          <td style="width: auto; padding-left: 8px; " colspan="3">
+            <P>:RAHIM HOSSAIN</P>
+            <P>:INFORMATION TECHNOLOGY</P>
+            <P>:INFORMATION TECHNOLOGY</P>
+            <P>:INFORMATION TECHNOLOGY</P>
+            <P>:Worker</P>
+            <p>:31</p>
+          </td>
+
+          <tr>
+            <td style="width: auto;" >
+            
+              <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; height: 190px; vertical-align: top; text-align: left; padding-left: 5px;">প্রাপ্য মজুরী:</P>
+              
+              <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; padding-left: 5px;">কর্তনকৃত মজুরী:</P>
+              
+              <p style="vertical-align: bottom;"></p>
+            </td>
+            
+            <td style="width: 11%;">
+              <P>ও.টি ঘণ্টা</P>
+              <P>হাজিরা দিন</P>
+              <P>অনুপস্থিত দিন</P>
+              <P>মূল মজুরী</P>
+              <P>বাড়ী ভাড়া ভাতা</P>
+              <P>চিকিৎসা ভাতা</P>
+              <P>যাতায়াত ভাতা</P>
+              <P>খাদ্য ভাতা</P>
+              <P>ও. টি মজুরী</P>
+              <P>হাজিরা বোনাস</P>
+              <P>বকেয়া</P>
+              <P>শিফট ভাতা</P>
+              <P>অন্যান্য ভাতা</P>
+              <P>মোট উপার্জন</P>
+              <P>অনুপস্থিতি ছুটি বাবদ</P>
+              <P>লোন</P>
+              <P>অগ্রিম</P>
+              <P>অন্যান্য কর্তন</P>
+              <P>রেভিনিঊ স্টা¤প বাবদ</P>
+              <P>পিএফ</P>
+              <P>মোট কর্তন</P>
+              <P>মোট প্রদেয় বেতন</P>
+              <P></P>
+            </td>
+            
+  
+  
+            <td style="width: auto; text-align: left; padding-left: 10px;">
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p> 
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+                <p>:</p>
+            </td>
+  
+  
+  
+            <td style="width: auto; text-align: right; padding-right: 28px;" >
+              <P>৪০</P>
+              <P>২৭</P>
+              <P>০</P>
+              <P>৯,৮২৯</P>
+              <P>৪,৯১৫</P>
+              <P>৭৫০</P>
+              <P>৪৫০</P>
+              <P>১২৫০</P>
+              <P>৩,৭৮০</P>
+              <P>৭০০</P>
+              <P>০</P>
+              <P>০</P>
+              <P>০</P>
+              <P>৭০২১,৬৭৪</P>
+              <P>০</P>
+              <P>০</P>
+              <P>০</P>
+              <P>০</P>
+              <P>০</P>
+              <P>৭৮৬</P>
+              <P>৭৮৬</P>
+              <P>২০,৮৮৮</P>
+              <P></P>
+            </td>
+            <td style="vertical-align: top; width: 8%;">
+              <p>ও. টি হার </p>
+              <p>ছুটি (দিন)   </p>
+            </td>
+            <td style="vertical-align: top; width: auto; text-align: left;">
+              <p>:৯৪.৫১</p>
+              <p>:০</p>
+            </td> 
+            
+            <tr>
+                <td style="border-top: none;" colspan="2">
+                      <p  style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; padding-left: 10px; margin-bottom: 5px;">কর্তৃপক্ষ</p>
+                 </td>
+                 <td style="border-top: none;"></td>
+                 <td style="border-top: none;" colspan="2"> 
+                  <p  style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; padding-left: 10px; margin-bottom: 5px;">প্রাপকের স্বাক্ষর</p>
+                  </td>
+                   </tr>         
+
+        </table>
+    </div>
+
+
+
+        <div class="table-top-right">   
+        <table style="height: 0%; vertical-align: top-Right;">
+            <tr>
+                <th style="width:14%; padding-left: 10px;" colspan="2">
+                  <div class="Logo-image">
+                    <img src="Logo.jpg" alt="" width="auto" height="auto"></div>
+              </th>
+               
+                <th style="width:35%; font-size: 16px;" colspan="4">MAF Footwear Limited</th>
+        
+        </tr>
+
+        <tr>
+            <td Style=" padding-left: 10px; font-size: 11px;" colspan="6">Plot No 296, East Nasira bad I/A,                   Chattogram, Bangladesh.</td>
+           </tr>
+           <tr>
+          
+            <th style="width:10%; font-size: 11px;" colspan="2">বেতন রশিদ:</th>
+          
+            <th style="width:25%; font-size: 11px;" colspan="4">From   :	26-OCT-24              To : 25-NOV-24</th>
+            </tr>
+    
+            <tr border: 1px solid black;>
+         
+                <td style="height: 45px; width: 10%; vertical-align: top; text-align: left; padding-left: 5px;">
+                  <P>কার্ড নং</P>
+                  <P>পদবী</P>
+                  <P>যোগদানের তারিখ</P>
+                  <P>মোট মজুরী</P>
+                  <P>কার্য দিবস সংখ্যা</P>
+                </td>
+                
+                <td style="height: 45px; width: 9%; vertical-align: top; text-align: left;">
+                  <P>:34532</P>
+                  <P>:Sr. Technician</P>
+                  <P>:20-SEP-20</P>
+                  <P>:17,194</P>
+                  <P>:27</P>
+                </td>
+                
+                <td style="width: 9%;">
+                  <P>নাম</P>
+                  <P>ডিপার্টমেন্ট</P>
+                  <P>সেকশন</P>
+                  <P>সাব সেকশন</P>
+                  <P>টাইপ</P>
+                  <p>মজুরীযোগ্য দিন</p>
+                </td>
+                <td style="width: auto; padding-left: 8px;" colspan="3">
+                  <P>:RAHIM HOSSAIN</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:Worker</P>
+                  <p>:31</p>
+                </td>
+
+                <tr style="border-top: none;">
+                    <td style="width:10%" >
+                    
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; height: 190px; vertical-align: top; text-align: left; padding-left: 5px;">প্রাপ্য মজুরী:</P>
+                      
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold;  padding-left: 5px;">কর্তনকৃত মজুরী:</P>
+                      
+                      <p style="vertical-align: bottom;"></p>
+                    </td>
+                    
+                    <td style="width: 11%;">
+                      <P>ও.টি ঘণ্টা</P>
+                      <P>হাজিরা দিন</P>
+                      <P>অনুপস্থিত দিন</P>
+                      <P>মূল মজুরী</P>
+                      <P>বাড়ী ভাড়া ভাতা</P>
+                      <P>চিকিৎসা ভাতা</P>
+                      <P>যাতায়াত ভাতা</P>
+                      <P>খাদ্য ভাতা</P>
+                      <P>ও. টি মজুরী</P>
+                      <P>হাজিরা বোনাস</P>
+                      <P>বকেয়া</P>
+                      <P>শিফট ভাতা</P>
+                      <P>অন্যান্য ভাতা</P>
+                      <P>মোট উপার্জন</P>
+                      <P>অনুপস্থিতি ছুটি বাবদ</P>
+                      <P>লোন</P>
+                      <P>অগ্রিম</P>
+                      <P>অন্যান্য কর্তন</P>
+                      <P>রেভিনিঊ স্টা¤প বাবদ</P>
+                      <P>পিএফ</P>
+                      <P>মোট কর্তন</P>
+                      <P>মোট প্রদেয় বেতন</P>
+                      <P></P>
+                    </td>
+                    
+          
+          
+                    <td style="width: auto; text-align: left; padding-left: 10px;">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p> 
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </td>
+          
+          
+          
+                    <td style="width: auto; text-align: right; padding-right: 28px;">
+                      <P>৪০</P>
+                      <P>২৭</P>
+                      <P>০</P>
+                      <P>৯,৮২৯</P>
+                      <P>৪,৯১৫</P>
+                      <P>৭৫০</P>
+                      <P>৪৫০</P>
+                      <P>১২৫০</P>
+                      <P>৩,৭৮০</P>
+                      <P>৭০০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭০২১,৬৭৪</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭৮৬</P>
+                      <P>৭৮৬</P>
+                      <P>২০,৮৮৮</P>
+                      <P></P>
+                    </td>
+                    <td style="vertical-align: top; width: 8%;">
+                      <p>ও. টি হার </p>
+                      <p>ছুটি (দিন)   </p>
+                    </td>
+                    <td style="vertical-align: top; width: auto; text-align: left;">
+                      <p>:৯৪.৫১</p>
+                      <p>:০</p>
+                    </td> 
+                    
+                    <tr>
+                        <td style="border-top: none;" colspan="2">
+                              <p style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">কর্তৃপক্ষ</p>
+                         </td>
+                         <td style="border-top: none;"></td>
+                         <td style="border-top: none;" colspan="2"> 
+                          <p style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">প্রাপকের স্বাক্ষর</p>
+                          </td>
+                           </tr>           
+    
+    
+        </table>
+    </div>
+
+        <div class="table-bottom-left">
+        <table style="height: 0%; vertical-align: bottom-left;">
+            <tr>
+                <th style="width:14%; padding-left: 10px;" colspan="2">
+                  <div class="Logo-image">
+                    <img src="Logo.jpg" alt="" width="auto" height="auto"></div>
+              </th>
+               
+                <th style="width:35%;font-size: 16px;" colspan="4">MAF Footwear Limited</th>
+        </tr>
+        <tr>
+            <td Style=" padding-left: 10px; font-size: 11px;" colspan="6">Plot No 296, East Nasira bad I/A,                   Chattogram, Bangladesh.</td>
+           </tr>
+           <tr>
+          
+            <th style="width:10%; font-size: 11px;" colspan="2">বেতন রশিদ:</th>
+          
+            <th style="width:25%; font-size: 11px;" colspan="4">From   :	26-OCT-24              To : 25-NOV-24</th>
+            </tr>
+    
+            <tr border: 1px solid black;>
+         
+                <td style="height: 50px; width: 10%; vertical-align: top; text-align: left;  padding-left: 5px;">
+                  <P>কার্ড নং</P>
+                  <P>পদবী</P>
+                  <P>যোগদানের তারিখ</P>
+                  <P>মোট মজুরী</P>
+                  <P>কার্য দিবস সংখ্যা</P>
+                </td>
+                
+                <td style="height: 50px; vertical-align: top; text-align: left;">
+                  <P>:34532</P>
+                  <P>:Sr. Technician</P>
+                  <P>:20-SEP-20</P>
+                  <P>:17,194</P>
+                  <P>:27</P>
+                </td>
+                
+                <td style="width: 9%; ">
+                  <P>নাম</P>
+                  <P>ডিপার্টমেন্ট</P>
+                  <P>সেকশন</P>
+                  <P>সাব সেকশন</P>
+                  <P>টাইপ</P>
+                  <p>মজুরীযোগ্য দিন</p>
+                </td>
+                <td style="width: auto; padding-left: 8px;" colspan="3">
+                  <P>:RAHIM HOSSAIN</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:Worker</P>
+                  <p>:31</p>
+                </td>
+
+                <tr>
+                    <td style="width:10%" >
+                    
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; height: 190px; vertical-align: top; text-align: left; padding-left: 5px;">প্রাপ্য মজুরী:</P>
+                      
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; padding-left: 5px;">কর্তনকৃত মজুরী:</P>
+                      
+                      <p style="vertical-align: bottom;"></p>
+                    </td>
+                    
+                    <td style="width:11%">
+                      <P>ও.টি ঘণ্টা</P>
+                      <P>হাজিরা দিন</P>
+                      <P>অনুপস্থিত দিন</P>
+                      <P>মূল মজুরী</P>
+                      <P>বাড়ী ভাড়া ভাতা</P>
+                      <P>চিকিৎসা ভাতা</P>
+                      <P>যাতায়াত ভাতা</P>
+                      <P>খাদ্য ভাতা</P>
+                      <P>ও. টি মজুরী</P>
+                      <P>হাজিরা বোনাস</P>
+                      <P>বকেয়া</P>
+                      <P>শিফট ভাতা</P>
+                      <P>অন্যান্য ভাতা</P>
+                      <P>মোট উপার্জন</P>
+                      <P>অনুপস্থিতি ছুটি বাবদ</P>
+                      <P>লোন</P>
+                      <P>অগ্রিম</P>
+                      <P>অন্যান্য কর্তন</P>
+                      <P>রেভিনিঊ স্টা¤প বাবদ</P>
+                      <P>পিএফ</P>
+                      <P>মোট কর্তন</P>
+                      <P>মোট প্রদেয় বেতন</P>
+                      <P></P>
+                    </td>
+                    
+          
+          
+                    <td style="width: auto; text-align: left; padding-left: 10px;">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p> 
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </td>
+          
+          
+          
+                    <td style="width: auto; text-align: right; padding-right: 28px;" >
+                      <P>৪০</P>
+                      <P>২৭</P>
+                      <P>০</P>
+                      <P>৯,৮২৯</P>
+                      <P>৪,৯১৫</P>
+                      <P>৭৫০</P>
+                      <P>৪৫০</P>
+                      <P>১২৫০</P>
+                      <P>৩,৭৮০</P>
+                      <P>৭০০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭০২১,৬৭৪</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭৮৬</P>
+                      <P>৭৮৬</P>
+                      <P>২০,৮৮৮</P>
+                      <P></P>
+                    </td>
+                    <td style="vertical-align: top; width: 8%;">
+                      <p>ও. টি হার </p>
+                      <p>ছুটি (দিন)   </p>
+                    </td>
+                    <td style="vertical-align: top; width: auto; text-align: left;">
+                      <p>:৯৪.৫১</p>
+                      <p>:০</p>
+                    </td>  
+                    
+                    <tr>
+                        <td style="border-top: none;" colspan="2">
+                              <p style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">কর্তৃপক্ষ</p>
+                         </td>
+                         <td style="border-top: none;"></td>
+                         <td style="border-top: none;" colspan="2"> 
+                          <p style="text-decoration: overline; text-align: center; font-size: 15px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">প্রাপকের স্বাক্ষর</p>
+                          </td>
+                           </tr>                    
+    
+        </table>
+</div>
+
+        <div class="table-bottom-right">
+        <table style="height: 0%; vertical-align: bottom-Right;">
+            <tr>
+                <th style="width:14%; padding-left: 10px;" colspan="2">
+                  <div class="Logo-image">
+                    <img src="Logo.jpg" alt="" width="auto" height="auto"></div>
+                  </th>
+               
+                <th style="width:35%; font-size: 16px;" colspan="4">MAF Footwear Limited</th>
+        </tr>
+        <tr>
+            <td style=" padding-left: 10px; font-size: 11px;" colspan="6">Plot No 296, East Nasira bad I/A,                   Chattogram, Bangladesh.</td>
+           </tr>
+        
+           <tr>
+          
+            <th style="width:10%; font-size: 11px;" colspan="2">বেতন রশিদ:</th>
+          
+            <th style="width:25%; font-size: 11px;" colspan="4">From   :	26-OCT-24              To : 25-NOV-24</th>
+            </tr>
+
+            <tr border: 1px solid black;>
+         
+                <td style="height: 50px; width: 10%; vertical-align: top; text-align: left; padding-left: 5px;">
+                  <P>কার্ড নং</P>
+                  <P>পদবী</P>
+                  <P>যোগদানের তারিখ</P>
+                  <P>মোট মজুরী</P>
+                  <P>কার্য দিবস সংখ্যা</P>
+                </td>
+                
+                <td style="height: 50px; width: 9%; vertical-align: top; text-align: left; padding-left: 10px;">
+                  <P>:34532</P>
+                  <P>:Sr. Technician</P>
+                  <P>:20-SEP-20</P>
+                  <P>:17,194</P>
+                  <P>:27</P>
+                </td>
+                
+                <td style="width: 9%;  padding-left: 0px;">
+                  <P>নাম</P>
+                  <P>ডিপার্টমেন্ট</P>
+                  <P>সেকশন</P>
+                  <P>সাব সেকশন</P>
+                  <P>টাইপ</P>
+                  <p>মজুরীযোগ্য দিন</p>
+                </td>
+                <td style="width: auto;  padding-left: 8px;" colspan="3">
+                  <P>:RAHIM HOSSAIN</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:INFORMATION TECHNOLOGY</P>
+                  <P>:Worker</P>
+                  <p>:31</p>
+                </td>
+
+                <tr>
+                    <td style="width:10%; padding-left: 5px;" >
+                    
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold; height: 190px; vertical-align: top; text-align: left;">প্রাপ্য মজুরী:</P>
+                      
+                      <P style="text-decoration: underline; text-decoration-thickness: 2px; width: 100%; font-weight: bold;">কর্তনকৃত মজুরী:</P>
+                      
+                      <p style="vertical-align: bottom;"></p>
+                    </td>
+                    
+                    <td style="width:11%; ">
+                      <P>ও.টি ঘণ্টা</P>
+                      <P>হাজিরা দিন</P>
+                      <P>অনুপস্থিত দিন</P>
+                      <P>মূল মজুরী</P>
+                      <P>বাড়ী ভাড়া ভাতা</P>
+                      <P>চিকিৎসা ভাতা</P>
+                      <P>যাতায়াত ভাতা</P>
+                      <P>খাদ্য ভাতা</P>
+                      <P>ও. টি মজুরী</P>
+                      <P>হাজিরা বোনাস</P>
+                      <P>বকেয়া</P>
+                      <P>শিফট ভাতা</P>
+                      <P>অন্যান্য ভাতা</P>
+                      <P>মোট উপার্জন</P>
+                      <P>অনুপস্থিতি ছুটি বাবদ</P>
+                      <P>লোন</P>
+                      <P>অগ্রিম</P>
+                      <P>অন্যান্য কর্তন</P>
+                      <P>রেভিনিঊ স্টা¤প বাবদ</P>
+                      <P>পিএফ</P>
+                      <P>মোট কর্তন</P>
+                      <P>মোট প্রদেয় বেতন</P>
+                      <P></P>
+                    </td>
+                    
+          
+          
+                    <td style="width: auto; text-align: left; padding-left: 10px;">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p> 
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </td>
+          
+          
+          
+                    <td style="width: auto; text-align: right; padding-right: 28px;" >
+                      <P>৪০</P>
+                      <P>২৭</P>
+                      <P>০</P>
+                      <P>৯,৮২৯</P>
+                      <P>৪,৯১৫</P>
+                      <P>৭৫০</P>
+                      <P>৪৫০</P>
+                      <P>১২৫০</P>
+                      <P>৩,৭৮০</P>
+                      <P>৭০০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭০২১,৬৭৪</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>০</P>
+                      <P>৭৮৬</P>
+                      <P>৭৮৬</P>
+                      <P>২০,৮৮৮</P>
+                      <P></P>
+                    </td>
+                    <td style="vertical-align: top; width: 8%;">
+                      <p>ও. টি হার </p>
+                      <p>ছুটি (দিন)   </p>
+                    </td>
+                    <td style="vertical-align: top; width: auto; text-align: left;">
+                      <p>:৯৪.৫১</p>
+                      <p>:০</p>
+                    </td>
+                           
+                    
+                    <tr>
+                        <td style="border-top: none; " colspan="2">
+                              <p style="text-decoration: overline; text-align: center; font-size: 15px; padding-left: 5px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">কর্তৃপক্ষ</p>
+                         </td>
+                         <td style="border-top: none;"></td>
+                         <td style="border-top: none; " colspan="2"> 
+                          <p style="text-decoration: overline; text-align: center; padding-left: 5px; font-size: 15px; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">প্রাপকের স্বাক্ষর</p>
+                          </td>
+                           </tr>                   
+       
+    
+        </table>
+    
+    
+
+    
+    </table>
+</div>
+</div>
+</body>
+</html>
